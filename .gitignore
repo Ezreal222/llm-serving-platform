@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# uv / venv (uv.lock is committed for reproducible installs)
+.venv/
+
+# Model weights & HF cache (never commit — GBs)
+*.safetensors
+*.bin
+*.gguf
+models/
+.cache/
+hf_cache/
+
+# Results — keep raw json/csv, ignore heavy plots by default
+results/*.png
+results/*.jpg
+
+# Env / secrets
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
